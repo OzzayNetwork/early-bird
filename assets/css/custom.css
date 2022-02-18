@@ -758,6 +758,10 @@
             height: 40px;
         }
         
+        .font-50px {
+            font-size: 50px !important;
+        }
+        
         @media (max-width: 576px) {
             .navbar-brand-box {
                 display: none;
