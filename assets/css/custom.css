@@ -817,7 +817,7 @@
                 align-items: center;
                 /* justify-content: center; */
                 /* background: red; */
-                width: 174px;
+                width: auto;
                 height: 70px
             }
             

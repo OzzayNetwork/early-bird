@@ -21,14 +21,6 @@ $(window).on('load', function() {
     $('body').on('click', '.minimize', function() {
         $(this).parent().parent().parent().parent().siblings().toggleClass('d-none');
     });
-    $('body').on('click', '.option-selector-cont .dropdown-menu a', function() {
-
-        var theSelectedption = $(this).children("span").text();
-        var theActiveOption = $(this).parent().siblings().find("span").text(theSelectedption);
-        // alert(theSelectedption);
-        // theSelectedption = theActiveOption;
-
-    });
 
 
     $('.selectpicker').selectpicker();
