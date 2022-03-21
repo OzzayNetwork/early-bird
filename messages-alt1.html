@@ -467,156 +467,308 @@
                                         </div>
                                     </div>
                                     <div class="card-body the-inbox">
-                                        <table id="emailDataTable-btns" class="table   nowrap w-100 table-hover mt-0 mb-0">
+                                        <table id="emailDataTable-btns" class="table table-borderless dt-responsive  nowrap w-100 table-hover">
                                             <thead>
                                                 <tr class="d-none">
-                                                    <th>Mode</th>
-                                                    <th>Status</th>
+                                                    <th>#</th>
                                                     <th>Name</th>
-                                                    <th>Message Content</th>
+                                                    <th>Phone</th>
+                                                    <th>Email</th>
+                                                    <th></th>
+                                                    <th>Message</th>
                                                     <th>Date</th>
-
                                                 </tr>
                                             </thead>
                                             <tbody class="table-hover">
                                                 <tr class="text-nowrap">
-                                                    <td class="">
-                                                        <!-- put the index here -->
-                                                        <span class="d-none">1</span>
-                                                        <div class="flex-shrink-0 align-self-center m-0 p-0 d-flex d-md-none">
-                                                            <div class="avatar-xs m-0">
-                                                                <span class="avatar-title rounded-circle bg-success bg-orange text-white">
-                                                                    AW
-                                                                </span>
-                                                            </div>
-
+                                                    <td>
+                                                        <div class="checkbox-wrapper-mail">
+                                                            <input type="checkbox" id="chek2">
+                                                            <label for="chek2" class="toggle"></label>
                                                         </div>
-
-
-                                                        <span class=" font-size-18 d-none d-md-flex">
-                                                            <i class="mdi mdi-chat-outline text-info pr-2"><span class="d-none">SMS</span></i>
-                                                        <i class="mdi mdi-email-check-outline text-info pr-2"><span class="d-none">email</span></i>
-                                                        <i class="mdi mdi-whatsapp text-info"><span class="d-none">WhatsApp</span></i>
-                                                        </span>
-
-
                                                     </td>
-                                                    <!-- the delivery status keep it hidden. -->
-                                                    <td class="d-none">
-                                                        sent
+                                                    <td class="text-capitalize">edwin kiploman</td>
+                                                    <td>
+                                                        <p class="pb-0 mb-0 d-flex justify-content-between align-items-center"><span>0704 549 859</span><span class="bx bx-check-double text-info font-21  ml-7px"></span></p>
                                                     </td>
-                                                    <td class="text-capitalize d-none d-md-table-cell">Alex Wanjala</td>
-                                                    <td class="the-msg the-msg-2">
-                                                        <p class=" justify-content-between w-100 d-flex d-md-none">
-                                                            <span class="font-16px">Alex Wanjala</span>
-                                                            <span>20 Mar</span>
-                                                        </p>
-                                                        <span class="">Re: The Message Title</span>- <br class="d-sm-block d-md-none">
-                                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pellentesque volutpat dolor vitae ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                                                            Cras a consequat est. Donec viverra nulla id lacus aliquam, sit amet hendrerit metus venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ac dapibus
-                                                            erat. In finibus pharetra laoreet. Phasellus rhoncus, arcu nec maximus feugiat, tortor urna iaculis ex, ullamcorper elementum sem sem mattis arcu. Pellentesque sodales, magna sit amet faucibus tincidunt,
-                                                            erat nunc suscipit neque, a tempor neque augue non urna. Sed finibus, mi in finibus fringilla, mauris quam dignissim magna, lacinia sagittis nisl nisi id elit. Phasellus eu neque vel ex viverra commodo.</span>
-                                                        <span class=" font-size-18 d-flex d-md-none">
-                                                            <br>
-                                                                <i class="mdi mdi-chat-outline text-info pr-2"><span class="d-none">SMS</span></i>
-                                                        <i class="mdi mdi-email-check-outline text-info pr-2"><span class="d-none">email</span></i>
-                                                        <i class="mdi mdi-whatsapp text-info"><span class="d-none">WhatsApp</span></i>
+                                                    <td>
+                                                        <p class="pb-0 mb-0 d-flex justify-content-between align-items-center"><span>email@email.com</span><span class="bx bx-check-double text-info font-21  ml-7px"></span></p>
+                                                    </td>
+                                                    <td>
+                                                        <span class=" font-size-24  ml-7px">
+                                                            <i class="mdi mdi-chat text-info "></i>
+                                                            <i class="mdi mdi-email-check text-info "></i>
                                                         </span>
                                                     </td>
-                                                    <td class="text-capitalize d-none d-md-table-cell">Feb 28</td>
+                                                    <td class="the-msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pellentesque volutpat dolor vitae ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                                        Cras a consequat est. Donec viverra nulla id lacus aliquam, sit amet hendrerit metus venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ac dapibus
+                                                        erat. In finibus pharetra laoreet. Phasellus rhoncus, arcu nec maximus feugiat, tortor urna iaculis ex, ullamcorper elementum sem sem mattis arcu. Pellentesque sodales, magna sit amet faucibus tincidunt,
+                                                        erat nunc suscipit neque, a tempor neque augue non urna. Sed finibus, mi in finibus fringilla, mauris quam dignissim magna, lacinia sagittis nisl nisi id elit. Phasellus eu neque vel ex viverra commodo.</td>
+                                                    <td>Feb 28</td>
                                                 </tr>
-
-
                                                 <tr class="text-nowrap unread">
-                                                    <td class="">
-                                                        <span class="d-none">2</span>
-                                                        <div class="flex-shrink-0 align-self-center m-0 p-0 d-flex d-md-none">
-                                                            <div class="avatar-xs m-0">
-                                                                <span class="avatar-title rounded-circle bg-success bg-orange text-white">
-                                                                    EK
-                                                                </span>
-                                                            </div>
-
+                                                    <td>
+                                                        <div class="checkbox-wrapper-mail">
+                                                            <input type="checkbox" id="chek1">
+                                                            <label for="chek1" class="toggle"></label>
                                                         </div>
-
-
-                                                        <span class=" font-size-18 d-none d-md-flex">
-                                                            <i class="mdi mdi-chat-outline text-info pr-2"><span class="d-none">SMS</span></i>
-                                                        <i class="mdi mdi-email-check-outline text-info pr-2"><span class="d-none">email</span></i>
-                                                        <i class="mdi mdi-whatsapp text-danger"><span class="d-none">WhatsApp</span></i>
+                                                    </td>
+                                                    <td class="text-capitalize">Alex wanjala</td>
+                                                    <td>
+                                                        <p class="pb-0 mb-0 d-flex justify-content-between align-items-center"><span>0704 549 859</span><span class="bx bx-error text-danger font-21  ml-7px"></span></p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="pb-0 mb-0 d-flex justify-content-between align-items-center"><span>alex@wanjala.com</span><span class="bx bx-error text-danger font-21  ml-7px"></span></p>
+                                                    </td>
+                                                    <td>
+                                                        <span class=" font-size-24  ml-7px">
+                                                            <i class="mdi mdi-whatsapp text-danger "></i>
+                                                            <i class="mdi mdi-chat-remove text-danger "></i>
+                                                            <i class="mdi mdi-email-check text-info "></i>
                                                         </span>
-
-
                                                     </td>
-                                                    <td class="d-none">
-                                                        blocked
+                                                    <td class="the-msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pellentesque volutpat dolor vitae ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                                        Cras a consequat est. Donec viverra nulla id lacus aliquam, sit amet hendrerit metus venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ac dapibus
+                                                        erat. In finibus pharetra laoreet. Phasellus rhoncus, arcu nec maximus feugiat, tortor urna iaculis ex, ullamcorper elementum sem sem mattis arcu. Pellentesque sodales, magna sit amet faucibus tincidunt,
+                                                        erat nunc suscipit neque, a tempor neque augue non urna. Sed finibus, mi in finibus fringilla, mauris quam dignissim magna, lacinia sagittis nisl nisi id elit. Phasellus eu neque vel ex viverra commodo.</td>
+                                                    <td>Feb 28</td>
+                                                </tr>
+                                                <tr class="text-nowrap">
+                                                    <td>
+                                                        <div class="checkbox-wrapper-mail">
+                                                            <input type="checkbox" id="chek3">
+                                                            <label for="chek3" class="toggle"></label>
+                                                        </div>
                                                     </td>
-                                                    <td class="text-capitalize d-none d-md-table-cell">Edwin Kiploman</td>
-                                                    <td class="the-msg the-msg-2">
-                                                        <p class=" justify-content-between w-100 d-flex d-md-none">
-                                                            <span class="font-16px">Edwin Kiploman</span>
-                                                            <span>20 Mar</span>
+                                                    <td class="text-capitalize">Kelvin Njuguna</td>
+                                                    <td>
+                                                        <p class="pb-0 mb-0 d-flex justify-content-between align-items-center"><span>0704 549 859</span><span class="bx bx-check-double text-info font-21  ml-7px"></span></p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="pb-0 mb-0 d-flex justify-content-between align-items-center"><span>email@email.com</span><span class="bx bx-check-double text-info font-21  ml-7px"></span></p>
+                                                    </td>
+                                                    <td>
+                                                        <span class=" font-size-24  ml-7px">
+                                                            <i class="mdi mdi-chat text-info "></i>
+                                                            <i class="mdi mdi-email-check text-info "></i>
+                                                        </span>
+                                                    </td>
+                                                    <td class="the-msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pellentesque volutpat dolor vitae ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                                        Cras a consequat est. Donec viverra nulla id lacus aliquam, sit amet hendrerit metus venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ac dapibus
+                                                        erat. In finibus pharetra laoreet. Phasellus rhoncus, arcu nec maximus feugiat, tortor urna iaculis ex, ullamcorper elementum sem sem mattis arcu. Pellentesque sodales, magna sit amet faucibus tincidunt,
+                                                        erat nunc suscipit neque, a tempor neque augue non urna. Sed finibus, mi in finibus fringilla, mauris quam dignissim magna, lacinia sagittis nisl nisi id elit. Phasellus eu neque vel ex viverra commodo.</td>
+                                                    <td>Feb 28</td>
+                                                </tr>
+                                                <tr class="text-nowrap">
+                                                    <td>
+                                                        <div class="checkbox-wrapper-mail">
+                                                            <input type="checkbox" id="chek4">
+                                                            <label for="chek4" class="toggle"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-capitalize">Kelvin Njuguna</td>
+                                                    <td>
+                                                        <p class="pb-0 mb-0 d-flex justify-content-between align-items-center"><span>0704 549 859</span><span class="bx bx-check-double text-info font-21  ml-7px"></span></p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="pb-0 mb-0 d-flex justify-content-between align-items-center"><span>email@email.com</span><span class="bx bx-check-double text-info font-21  ml-7px"></span></p>
+                                                    </td>
+                                                    <td>
+                                                        <span class=" font-size-24  ml-7px">
+                                                            <i class="mdi mdi-chat text-info "></i>
+                                                            <i class="mdi mdi-email-check text-info "></i>
+                                                        </span>
+                                                    </td>
+                                                    <td class="the-msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pellentesque volutpat dolor vitae ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                                        Cras a consequat est. Donec viverra nulla id lacus aliquam, sit amet hendrerit metus venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ac dapibus
+                                                        erat. In finibus pharetra laoreet. Phasellus rhoncus, arcu nec maximus feugiat, tortor urna iaculis ex, ullamcorper elementum sem sem mattis arcu. Pellentesque sodales, magna sit amet faucibus tincidunt,
+                                                        erat nunc suscipit neque, a tempor neque augue non urna. Sed finibus, mi in finibus fringilla, mauris quam dignissim magna, lacinia sagittis nisl nisi id elit. Phasellus eu neque vel ex viverra commodo.</td>
+                                                    <td>Feb 28</td>
+                                                </tr>
+                                                <tr class="text-nowrap unread">
+                                                    <td>
+                                                        <div class="checkbox-wrapper-mail">
+                                                            <input type="checkbox" id="chek5">
+                                                            <label for="chek5" class="toggle"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-capitalize">Kelvin Njuguna</td>
+                                                    <td>
+                                                        <p class="pb-0 mb-0 d-flex justify-content-between align-items-center"><span>0704 549 859</span><span class="font-21  ml-7px"><i class="bx bx-error text-danger "></i></span>
                                                         </p>
-                                                        <span class="the-title">The Message Title</span>- <br class="d-sm-block d-md-none">
-                                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pellentesque volutpat dolor vitae ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                                                            Cras a consequat est. Donec viverra nulla id lacus aliquam, sit amet hendrerit metus venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ac dapibus
-                                                            erat. In finibus pharetra laoreet. Phasellus rhoncus, arcu nec maximus feugiat, tortor urna iaculis ex, ullamcorper elementum sem sem mattis arcu. Pellentesque sodales, magna sit amet faucibus tincidunt,
-                                                            erat nunc suscipit neque, a tempor neque augue non urna. Sed finibus, mi in finibus fringilla, mauris quam dignissim magna, lacinia sagittis nisl nisi id elit. Phasellus eu neque vel ex viverra commodo.</span>
-                                                        <span class=" font-size-18 d-flex d-md-none">
-                                                            <br>
-                                                                <i class="mdi mdi-chat-outline text-info pr-2"><span class="d-none">SMS</span></i>
-                                                        <i class="mdi mdi-email-check-outline text-info pr-2"><span class="d-none">email</span></i>
-                                                        <i class="mdi mdi-whatsapp text-danger"><span class="d-none">WhatsApp</span></i>
+                                                    </td>
+                                                    <td>
+                                                        <p class="pb-0 mb-0 d-flex justify-content-between align-items-center"><span>email@email.com</span><span class="bx bx-check-double text-info font-21  ml-7px"></span></p>
+                                                    </td>
+                                                    <td>
+                                                        <span class=" font-size-24  ml-7px">
+                                                            <i class="mdi mdi-whatsapp text-danger "></i>
+                                                            <i class="mdi mdi-chat text-info "></i>
+                                                            <i class="mdi mdi-email-check text-info "></i>
                                                         </span>
                                                     </td>
-                                                    <td class="text-capitalize d-none d-md-table-cell">Feb 28</td>
+                                                    <td class="the-msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pellentesque volutpat dolor vitae ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                                        Cras a consequat est. Donec viverra nulla id lacus aliquam, sit amet hendrerit metus venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ac dapibus
+                                                        erat. In finibus pharetra laoreet. Phasellus rhoncus, arcu nec maximus feugiat, tortor urna iaculis ex, ullamcorper elementum sem sem mattis arcu. Pellentesque sodales, magna sit amet faucibus tincidunt,
+                                                        erat nunc suscipit neque, a tempor neque augue non urna. Sed finibus, mi in finibus fringilla, mauris quam dignissim magna, lacinia sagittis nisl nisi id elit. Phasellus eu neque vel ex viverra commodo.</td>
+                                                    <td>Feb 28</td>
                                                 </tr>
                                                 <tr class="text-nowrap pending-msg">
-                                                    <td class="">
-                                                        <span class="d-none">3</span>
-
-                                                        <div class="flex-shrink-0 align-self-center m-0 p-0 d-flex d-md-none">
-                                                            <div class="avatar-xs m-0">
-                                                                <span class="avatar-title rounded-circle bg-info bg-orange text-white">
-                                                                    KN
-                                                                </span>
-                                                            </div>
-
+                                                    <td>
+                                                        <div class="checkbox-wrapper-mail">
+                                                            <input type="checkbox" id="chek6">
+                                                            <label for="chek6" class="toggle"></label>
                                                         </div>
-
-
-                                                        <span class=" font-size-18 d-none d-md-flex">
-                                                            <i class="mdi mdi-chat-outline text-black opacity-50 pr-2"><span class="d-none">SMS</span></i>
-                                                        <i class="mdi mdi-email-check-outline text-black opacity-50 pr-2"><span class="d-none">email</span></i>
-                                                        <i class="mdi mdi-whatsapp text-black opacity-50"><span class="d-none">WhatsApp</span></i>
-                                                        </span>
-
-
                                                     </td>
-                                                    <td class="d-none">
-                                                        pending
+                                                    <td class="text-capitalize">Kelvin Njuguna</td>
+                                                    <td>
+                                                        <p class="pb-0 mb-0 d-flex justify-content-between align-items-center"><span>0704 549 859</span><span class="mdi mdi-check text-grey opacity-50 font-21  ml-7px"></span></p>
                                                     </td>
-                                                    <td class="text-capitalize d-none d-md-table-cell">Kelvin Njuguna</td>
-                                                    <td class="the-msg the-msg-2">
-                                                        <p class=" justify-content-between w-100 d-flex d-md-none">
-                                                            <span class="font-16px">Kelvin Njuguna</span>
-                                                            <span>20 Mar</span>
-                                                        </p>
-                                                        <span class="the-title">The Message Title</span>- <br class="d-sm-block d-md-none">
-                                                        <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pellentesque volutpat dolor vitae ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                                                            Cras a consequat est. Donec viverra nulla id lacus aliquam, sit amet hendrerit metus venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ac dapibus
-                                                            erat. In finibus pharetra laoreet. Phasellus rhoncus, arcu nec maximus feugiat, tortor urna iaculis ex, ullamcorper elementum sem sem mattis arcu. Pellentesque sodales, magna sit amet faucibus tincidunt,
-                                                            erat nunc suscipit neque, a tempor neque augue non urna. Sed finibus, mi in finibus fringilla, mauris quam dignissim magna, lacinia sagittis nisl nisi id elit. Phasellus eu neque vel ex viverra commodo.</span>
-                                                        <span class=" font-size-18 d-flex d-md-none">
-                                                            <br>
-                                                            <i class="mdi mdi-chat-outline text-black opacity-50 pr-2"><span class="d-none">SMS</span></i>
-                                                        <i class="mdi mdi-email-check-outline text-black opacity-50 pr-2"><span class="d-none">email</span></i>
-                                                        <i class="mdi mdi-whatsapp text-black opacity-50"><span class="d-none">WhatsApp</span></i>
+                                                    <td>
+                                                        <p class="pb-0 mb-0 d-flex justify-content-between align-items-center"><span>email@email.com</span><span class="mdi mdi-check text-grey opacity-50 font-21  ml-7px"></span></p>
+                                                    </td>
+                                                    <td>
+                                                        <span class=" font-size-24  ml-7px">
+                                                            <i class="mdi mdi-chat text-grey opacity-25 "></i>
+                                                            <i class="mdi mdi-email-check text-grey opacity-25"></i>
                                                         </span>
                                                     </td>
-                                                    <td class="text-capitalize d-none d-md-table-cell">Feb 28</td>
+                                                    <td class="the-msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pellentesque volutpat dolor vitae ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                                        Cras a consequat est. Donec viverra nulla id lacus aliquam, sit amet hendrerit metus venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ac dapibus
+                                                        erat. In finibus pharetra laoreet. Phasellus rhoncus, arcu nec maximus feugiat, tortor urna iaculis ex, ullamcorper elementum sem sem mattis arcu. Pellentesque sodales, magna sit amet faucibus tincidunt,
+                                                        erat nunc suscipit neque, a tempor neque augue non urna. Sed finibus, mi in finibus fringilla, mauris quam dignissim magna, lacinia sagittis nisl nisi id elit. Phasellus eu neque vel ex viverra commodo.</td>
+                                                    <td>Feb 28</td>
                                                 </tr>
-
+                                                <tr class="text-nowrap">
+                                                    <td>
+                                                        <div class="checkbox-wrapper-mail">
+                                                            <input type="checkbox" id="chek7">
+                                                            <label for="chek7" class="toggle"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-capitalize">Kelvin Njuguna</td>
+                                                    <td>
+                                                        <p class="pb-0 mb-0 d-flex justify-content-between align-items-center"><span>0704 549 859</span><span class="bx bx-check-double text-info font-21  ml-7px"></span></p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="pb-0 mb-0 d-flex justify-content-between align-items-center"><span>email@email.com</span><span class="bx bx-check-double text-info font-21  ml-7px"></span></p>
+                                                    </td>
+                                                    <td>
+                                                        <span class=" font-size-24  ml-7px">
+                                                            <i class="mdi mdi-chat text-info "></i>
+                                                            <i class="mdi mdi-email-check text-info "></i>
+                                                        </span>
+                                                    </td>
+                                                    <td class="the-msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pellentesque volutpat dolor vitae ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                                        Cras a consequat est. Donec viverra nulla id lacus aliquam, sit amet hendrerit metus venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ac dapibus
+                                                        erat. In finibus pharetra laoreet. Phasellus rhoncus, arcu nec maximus feugiat, tortor urna iaculis ex, ullamcorper elementum sem sem mattis arcu. Pellentesque sodales, magna sit amet faucibus tincidunt,
+                                                        erat nunc suscipit neque, a tempor neque augue non urna. Sed finibus, mi in finibus fringilla, mauris quam dignissim magna, lacinia sagittis nisl nisi id elit. Phasellus eu neque vel ex viverra commodo.</td>
+                                                    <td>Feb 28</td>
+                                                </tr>
+                                                <tr class="text-nowrap">
+                                                    <td>
+                                                        <div class="checkbox-wrapper-mail">
+                                                            <input type="checkbox" id="chek8">
+                                                            <label for="chek8" class="toggle"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-capitalize">Kelvin Njuguna</td>
+                                                    <td>
+                                                        <p class="pb-0 mb-0 d-flex justify-content-between align-items-center"><span>0704 549 859</span><span class="bx bx-check-double text-info font-21  ml-7px"></span></p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="pb-0 mb-0 d-flex justify-content-between align-items-center"><span>email@email.com</span><span class="bx bx-check-double text-info font-21  ml-7px"></span></p>
+                                                    </td>
+                                                    <td>
+                                                        <span class=" font-size-24  ml-7px">
+                                                            <i class="mdi mdi-chat text-info "></i>
+                                                            <i class="mdi mdi-email-check text-info "></i>
+                                                        </span>
+                                                    </td>
+                                                    <td class="the-msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pellentesque volutpat dolor vitae ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                                        Cras a consequat est. Donec viverra nulla id lacus aliquam, sit amet hendrerit metus venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ac dapibus
+                                                        erat. In finibus pharetra laoreet. Phasellus rhoncus, arcu nec maximus feugiat, tortor urna iaculis ex, ullamcorper elementum sem sem mattis arcu. Pellentesque sodales, magna sit amet faucibus tincidunt,
+                                                        erat nunc suscipit neque, a tempor neque augue non urna. Sed finibus, mi in finibus fringilla, mauris quam dignissim magna, lacinia sagittis nisl nisi id elit. Phasellus eu neque vel ex viverra commodo.</td>
+                                                    <td>Feb 28</td>
+                                                </tr>
+                                                <tr class="text-nowrap">
+                                                    <td>
+                                                        <div class="checkbox-wrapper-mail">
+                                                            <input type="checkbox" id="chek9">
+                                                            <label for="chek9" class="toggle"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-capitalize">Kelvin Njuguna</td>
+                                                    <td>
+                                                        <p class="pb-0 mb-0 d-flex justify-content-between align-items-center"><span>0704 549 859</span><span class="bx bx-check-double text-info font-21  ml-7px"></span></p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="pb-0 mb-0 d-flex justify-content-between align-items-center"><span>email@email.com</span><span class="bx bx-check-double text-info font-21  ml-7px"></span></p>
+                                                    </td>
+                                                    <td>
+                                                        <span class=" font-size-24  ml-7px">
+                                                            <i class="mdi mdi-chat text-info "></i>
+                                                            <i class="mdi mdi-email-check text-info "></i>
+                                                        </span>
+                                                    </td>
+                                                    <td class="the-msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pellentesque volutpat dolor vitae ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                                        Cras a consequat est. Donec viverra nulla id lacus aliquam, sit amet hendrerit metus venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ac dapibus
+                                                        erat. In finibus pharetra laoreet. Phasellus rhoncus, arcu nec maximus feugiat, tortor urna iaculis ex, ullamcorper elementum sem sem mattis arcu. Pellentesque sodales, magna sit amet faucibus tincidunt,
+                                                        erat nunc suscipit neque, a tempor neque augue non urna. Sed finibus, mi in finibus fringilla, mauris quam dignissim magna, lacinia sagittis nisl nisi id elit. Phasellus eu neque vel ex viverra commodo.</td>
+                                                    <td>Feb 28</td>
+                                                </tr>
+                                                <tr class="text-nowrap">
+                                                    <td>
+                                                        <div class="checkbox-wrapper-mail">
+                                                            <input type="checkbox" id="chek10">
+                                                            <label for="chek10" class="toggle"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-capitalize">Kelvin Njuguna</td>
+                                                    <td>
+                                                        <p class="pb-0 mb-0 d-flex justify-content-between align-items-center"><span>0704 549 859</span><span class="bx bx-check-double text-info font-21  ml-7px"></span></p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="pb-0 mb-0 d-flex justify-content-between align-items-center"><span>email@email.com</span><span class="bx bx-check-double text-info font-21  ml-7px"></span></p>
+                                                    </td>
+                                                    <td>
+                                                        <span class=" font-size-24  ml-7px">
+                                                            <i class="mdi mdi-chat text-info "></i>
+                                                            <i class="mdi mdi-email-check text-info "></i>
+                                                        </span>
+                                                    </td>
+                                                    <td class="the-msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pellentesque volutpat dolor vitae ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                                        Cras a consequat est. Donec viverra nulla id lacus aliquam, sit amet hendrerit metus venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ac dapibus
+                                                        erat. In finibus pharetra laoreet. Phasellus rhoncus, arcu nec maximus feugiat, tortor urna iaculis ex, ullamcorper elementum sem sem mattis arcu. Pellentesque sodales, magna sit amet faucibus tincidunt,
+                                                        erat nunc suscipit neque, a tempor neque augue non urna. Sed finibus, mi in finibus fringilla, mauris quam dignissim magna, lacinia sagittis nisl nisi id elit. Phasellus eu neque vel ex viverra commodo.</td>
+                                                    <td>Feb 28</td>
+                                                </tr>
+                                                <tr class="text-nowrap">
+                                                    <td>
+                                                        <div class="checkbox-wrapper-mail">
+                                                            <input type="checkbox" id="chek11">
+                                                            <label for="chek11" class="toggle"></label>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-capitalize">Kelvin Njuguna</td>
+                                                    <td>
+                                                        <p class="pb-0 mb-0 d-flex justify-content-between align-items-center"><span>0704 549 859</span><span class="bx bx-check-double text-info font-21  ml-7px"></span></p>
+                                                    </td>
+                                                    <td>
+                                                        <p class="pb-0 mb-0 d-flex justify-content-between align-items-center"><span>email@email.com</span><span class="bx bx-check-double text-info font-21  ml-7px"></span></p>
+                                                    </td>
+                                                    <td>
+                                                        <span class=" font-size-24  ml-7px">
+                                                            <i class="mdi mdi-chat text-info "></i>
+                                                            <i class="mdi mdi-email-check text-info "></i>
+                                                        </span>
+                                                    </td>
+                                                    <td class="the-msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pellentesque volutpat dolor vitae ullamcorper. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                                                        Cras a consequat est. Donec viverra nulla id lacus aliquam, sit amet hendrerit metus venenatis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed ac dapibus
+                                                        erat. In finibus pharetra laoreet. Phasellus rhoncus, arcu nec maximus feugiat, tortor urna iaculis ex, ullamcorper elementum sem sem mattis arcu. Pellentesque sodales, magna sit amet faucibus tincidunt,
+                                                        erat nunc suscipit neque, a tempor neque augue non urna. Sed finibus, mi in finibus fringilla, mauris quam dignissim magna, lacinia sagittis nisl nisi id elit. Phasellus eu neque vel ex viverra commodo.</td>
+                                                    <td>Feb 28</td>
+                                                </tr>
                                             </tbody>
 
                                         </table>

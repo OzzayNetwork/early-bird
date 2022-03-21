@@ -53,6 +53,9 @@ $(document).ready(function() {
 
     var emailTable;
     emailTable = $("#emailDataTable").DataTable(), $("#emailDataTable-btns").DataTable({
+        order: [
+            [0, "desc"]
+        ],
         lengthMenu: [
             [15, 30, 50, -1],
             ["15 Rows", "30 Rows", "50 Rows", "Everything"],
@@ -119,6 +122,7 @@ $(document).ready(function() {
             c.hasClass("card--fullscreen") ? (c.removeClass("card--fullscreen"), $("body").removeClass("data-table-toggled")) : (c.addClass("card--fullscreen"), $("body").addClass("data-table-toggled"))
         }
     })
+
 
 
     $('#inputSearch').keyup(function() {
