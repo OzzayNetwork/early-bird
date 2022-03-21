@@ -819,6 +819,10 @@
                 border-radius: 0px !important;
             }
             
+            .scheduled-msg td:last-child {
+                color: #f1b44c !important;
+            }
+            
             .phone-logo {
                 display: flex;
                 height: 36px;
