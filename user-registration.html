@@ -376,15 +376,49 @@
                                                 </div>
                                             </div>
                                             <div class="col-12">
+                                                <label for="Gender">Gender</label>
+                                                <div class="d-flex mb-3">
+                                                    <div class="form-check mb-3 pr-15px">
+                                                        <input class="form-check-input" type="radio" name="formRadios" id="formRadios1" checked="">
+                                                        <label class="form-check-label" for="formRadios1">
+                                                            Male
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check mb-3">
+                                                        <input class="form-check-input" type="radio" name="formRadios" id="formRadios1" checked="">
+                                                        <label class="form-check-label" for="formRadios1">
+                                                            Female
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
                                                 <div class="form-group">
                                                     <label for="">Email Address <strong class="text-danger">*</strong></label>
                                                     <input type="email" class="form-control" placeholder="Enter the user's email Address">
                                                 </div>
                                             </div>
-                                            <div class="col-12">
+                                            <div class="col-6">
                                                 <div class="form-group">
                                                     <label for="">Phone <strong class="text-danger">*</strong></label>
                                                     <input type="text" class="form-control" placeholder="Enter the user's phone number">
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label for="">Account Role <strong class="text-danger">*</strong></label>
+                                                    <select class="form-select">
+                                                        <option>Select role</option>
+                                                        <option>Messenger</option>
+                                                        <option>Super Admin</option>
+                                                    </select>
+                                                    <small>The Messenger account role will only have responsibilities for sending messages only while the super admin account will have <span class="fw-semibold">user management capabilities.</span> plus all other capabilities within the system</small>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <label for="">Company Role</label>
+                                                    <input type="text" class="form-control" placeholder="Enter the person's role at the company">
                                                 </div>
                                             </div>
 
