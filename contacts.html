@@ -364,9 +364,9 @@
                                             <button data-bs-toggle="modal" data-bs-target="#upload-contacts" type="button" class="btn btn-secondary dropdown-toggle option-selector mr-15px" data-bs-toggle="offcanvas" data-bs-target="#dt__filter" aria-controls="offcanvasRight">
                                                 <i class="mdi mdi-upload-multiple  font-size-16"></i> <span class="pl-1 d-md-inline">Upload Contacts excel file</span>
                                             </button>
-                                            <a href="contact-add.html" type="button" class="btn btn-primary dropdown-toggle option-selector" data-bs-toggle="offcanvas" data-bs-target="#dt__filter" aria-controls="offcanvasRight">
+                                            <button data-bs-toggle="modal" data-bs-target="#add-contact" type="button" class="btn btn-primary dropdown-toggle option-selector">
                                                 <i class="mdi mdi-account-plus-outline  font-size-16"></i> <span class="pl-1 d-md-inline">Add A Contact</span>
-                                            </a>
+                                            </button>
                                         </div>
 
 
@@ -931,6 +931,49 @@
                 </div>
             </div>
             <!-- upload contacts modal -->
+
+            <!-- adding a new contact -->
+            <div class="modal fade add-contact" data-bs-backdrop="static" data-bs-keyboard="false" id="add-contact" tabindex="-1" role="dialog" aria-labelledby="composemodalTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header bg-primary text-white">
+                            <h5 class="modal-title text-white" id="composemodalTitle">Add New Contact</h5>
+                            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <div class="mb-5">
+                                    <div class="form-group mb-3">
+                                        <label for="">Contact name</label>
+                                        <input type="text" class="form-control" placeholder="Enter The Tittle for the contacts you are to upload">
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <label for="">Phone Number</label>
+                                        <input type="text" class="form-control" placeholder="Enter the phone number">
+                                    </div>
+                                    <div class="form-group mb-3">
+                                        <label for="">Email address</label>
+                                        <input type="email" class="form-control" placeholder="Enter the email address">
+                                    </div>
+
+                                    <div class="form-group mb-3">
+                                        <label for="">Contact's title</label>
+                                        <input type="email" class="form-control" placeholder="Enter the email address">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success upload-the-contacts">Save Contact <i class="mdi mdi-account-details-outline  ms-1"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- adding a new contact -->
 
 
 
