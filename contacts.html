@@ -13,6 +13,8 @@
     <meta content="Themesbrand" name="author" />
     <!-- App favicon -->
     <link rel="shortcut icon" href="assets/images/favicon.svg">
+    <!-- droping file -->
+    <link href="assets/libs/dropzone/min/dropzone.min.css" rel="stylesheet" type="text/css" />
 
     <!-- DataTables -->
     <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
@@ -350,7 +352,7 @@
                     </div>
                     <!-- end page title -->
 
-                    <!-- eTransactions table -->
+
 
                     <div class="row">
                         <div class="col-12">
@@ -359,9 +361,12 @@
                                     <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
                                         <h4 class="mb-0">Your Saved contacts</h4>
                                         <div class="d-flex">
-                                            <button type="button" class="btn btn-primary dropdown-toggle option-selector" data-bs-toggle="offcanvas" data-bs-target="#dt__filter" aria-controls="offcanvasRight">
-                                                <i class="mdi mdi-account-multiple-plus-outline  font-size-16"></i> <span class="pl-1 d-md-inline">Add Contact(s)</span>
+                                            <button data-bs-toggle="modal" data-bs-target="#upload-contacts" type="button" class="btn btn-secondary dropdown-toggle option-selector mr-15px" data-bs-toggle="offcanvas" data-bs-target="#dt__filter" aria-controls="offcanvasRight">
+                                                <i class="mdi mdi-upload-multiple  font-size-16"></i> <span class="pl-1 d-md-inline">Upload Contacts excel file</span>
                                             </button>
+                                            <a href="contact-add.html" type="button" class="btn btn-primary dropdown-toggle option-selector" data-bs-toggle="offcanvas" data-bs-target="#dt__filter" aria-controls="offcanvasRight">
+                                                <i class="mdi mdi-account-plus-outline  font-size-16"></i> <span class="pl-1 d-md-inline">Add A Contact</span>
+                                            </a>
                                         </div>
 
 
@@ -874,79 +879,58 @@
             </div>
             <!-- End Page-content -->
 
-            <!-- Transaction Modal -->
-            <div class="modal fade transaction-detailModal" tabindex="-1" role="dialog" aria-labelledby="transaction-detailModalLabel" aria-hidden="true">
+            <!-- upload contacts modal -->
+            <div class="modal fade upload-contacts" data-bs-backdrop="static" data-bs-keyboard="false" id="upload-contacts" tabindex="-1" role="dialog" aria-labelledby="composemodalTitle" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="transaction-detailModalLabel">Transactions Details</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-header bg-primary text-white">
+                            <h5 class="modal-title text-white" id="composemodalTitle">Upload New Contacts</h5>
+                            <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
+                            <div>
+                                <div class="mb-5">
 
+                                    <p>
+                                        <a href=""><i class="mdi mdi-download mr-15px"></i>Download contacts file sample for reference</a>
+                                    </p>
 
-                            <div class="table-responsive mt-4">
-                                <table class="table align-middle table-nowrap">
-                                    <tbody>
-                                        <tr>
-                                            <td style="width: 30%">
-                                                <p class="mb-0">Car Plate Number</p>
-                                            </td>
-                                            <td style="width: 25%">
-                                                <h5 class="mb-0 text-uppercase">UAG 1235p</h5>
-                                            </td>
+                                    <div class="form-group mb-4">
+                                        <label for="">Contacts title</label>
+                                        <input type="text" class="form-control" placeholder="Enter The Tittle for the contacts you are to upload">
+                                    </div>
+                                    <div class="p-4 bg-light">
+                                        <div class="row ">
 
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="mb-0">Vehicle Category</p>
-                                            </td>
-                                            <td>
-                                                <h5 class="mb-0">Salon Car</h5>
-                                            </td>
+                                            <div class="col-12">
+                                                <form action="#" class="dropzone">
+                                                    <div class="fallback">
+                                                        <input name="file" type="file" class="mb-3">
+                                                    </div>
+                                                    <div class="dz-message needsclick">
+                                                        <div class="mb-3">
+                                                            <i class="display-4 text-muted bx bxs-cloud-upload"></i>
+                                                        </div>
 
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="mb-0">Payment Date</p>
-                                            </td>
-                                            <td>
-                                                <h5 class="mb-0">22 Apr 2022 06:54PM</h5>
-                                            </td>
+                                                        <h6>Contacts excell file</h6>
+                                                    </div>
+                                                </form>
+                                            </div>
 
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="mb-0">San Diego</p>
-                                            </td>
-                                            <td>
-                                                <h5 class="mb-0">1,026</h5>
-                                            </td>
+                                        </div>
+                                    </div>
+                                </div>
 
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">
-                                                <p class="mb-0 pb-0">Amount Paid</p>
-                                                <h3>UGX 2,000</h3>
-                                            </td>
-                                        </tr>
-                                        <TR>
-                                            <td col-span="2">
-                                                <p class="mb-2">Attended By<span class="text-primary"> Alex Sebeye</span></p>
-                                                <p class="mb-4">Toll taker's No. <span class="text-primary">0704549859</span></p>
-                                            </td>
-                                        </TR>
-                                    </tbody>
-                                </table>
                             </div>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-success upload-the-contacts">Save Contacts <i class="mdi mdi-account-details-outline  ms-1"></i></button>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- end modal -->
+            <!-- upload contacts modal -->
 
 
 
@@ -1006,6 +990,8 @@
 
     <!-- Bootstrap select -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+    <!-- Plugins js -->
+    <script src="assets/libs/dropzone/min/dropzone.min.js"></script>
     <!-- Datatable init js -->
     <script src="assets/js/pages/datatables.init.js"></script>
 
