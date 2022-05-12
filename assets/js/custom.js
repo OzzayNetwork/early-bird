@@ -62,5 +62,9 @@ $(window).on('load', function() {
         }
     })
 
+});
+
+$(document).ready(function() {
     $('.selectpicker').selectpicker();
+    $('.selectpicker').selectpicker('render')
 });

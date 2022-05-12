@@ -1019,6 +1019,10 @@
                 height: calc(100% - 23px);
             }
             
+            .w-220px {
+                width: 220px !important;
+            }
+            
             @media (max-width: 576px) {
                 .the-msg-2 {
                     max-width: 76vw;
