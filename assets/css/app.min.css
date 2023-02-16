@@ -4812,10 +4812,13 @@ table.dataTable.dtr-inline.collapsed>tbody>tr>td.dtr-control:before {
 }
 
 .chat-input {
-    border-radius: 30px;
+    padding: 1rem;
+    border-radius: 32px;
     background-color: #eff2f7!important;
     border-color: #eff2f7!important;
-    padding-right: 120px
+    padding-right: 120px;
+    font-size: 1rem;
+    padding-left: 2rem;
 }
 
 .chat-input-links {

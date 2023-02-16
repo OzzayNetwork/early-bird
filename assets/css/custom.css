@@ -1077,3 +1077,19 @@
                     width: auto;
                 }
             }
+
+            .chat-leftsidebar{
+                padding-left: 1rem;
+                padding-right: 1rem;
+                background: white;
+                border-right: 1px solid #eff2f7!important;
+            }
+            .chat-list li.active a{
+                background: #eef0fc;
+            }
+            .chat-search-box .form-control {
+                background-color: #eff2f7;
+            }
+            .chat-img{
+                height: 250px;
+            }
