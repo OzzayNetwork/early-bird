@@ -1093,3 +1093,15 @@
             .chat-img{
                 height: 250px;
             }
+            .chat-conversation-container{
+                background-color: #faedd7;
+            }
+            .chat-conversation-container .chat-conversation{
+                background: url("../images/chat-bg.svg") !important;
+                background-position: center !important;
+                background-size: cover !important;
+                background-attachment: revert !important;
+                opacity: 1;
+                background-size: 178px 137px !important;
+                background-repeat: repeat;
+            }
