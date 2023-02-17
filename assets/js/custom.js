@@ -62,6 +62,11 @@ $(window).on('load', function() {
         }
     })
 
+    $('body').on('click', '.chat-list li', function(){
+        $(this).addClass('active').siblings().removeClass('active')
+        $('.chat-room-place-holder').addClass('d-none').siblings().removeClass('d-none')
+    })
+
 });
 
 $(document).ready(function() {
